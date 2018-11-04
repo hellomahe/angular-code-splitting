@@ -1,0 +1,12 @@
+<div>
+  <app-header></app-header>
+User Login {{isLoggedIn? _shared.getUserName(): 'Start a fresh'}}
+  <button (click)="isLoggedIn?logout():login()"> 
+      {{isLoggedIn?'Log out': 'Log in'}}
+     </button>
+       <ul *ngIf="isLoggedIn">
+         <li><a routerLink="/user">User</a></li>
+         <li><a routerLink="/item">Item</a></li>
+         <li><a routerLink="/cart">cart</a></li>
+       </ul>
+    </div>

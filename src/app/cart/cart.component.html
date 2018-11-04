@@ -1,0 +1,20 @@
+<div class="cart">
+  <app-header></app-header>
+  <p>
+    {{cart.length}} items in cart
+  </p>
+  <ul class="items">
+    <li class="item" *ngFor="let item of cart; let i=index">
+    <p>
+      Name <a routerLink="{{'/item/'+item.id}}">{{item.name}}</a>
+    </p>
+    <p>
+      Price: {{item.quantity*item.price}}
+    </p>
+    <p>
+      Quantity : {{item.quantity}}
+    </p>
+    </li>
+  </ul>
+    
+  </div>
