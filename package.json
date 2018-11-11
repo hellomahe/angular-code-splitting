@@ -1,6 +1,7 @@
 {
   "name": "shop",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description":"Demo project to show how lazy loading modules in angular works",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

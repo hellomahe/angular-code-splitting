@@ -1,5 +1,8 @@
 # Shop
 
+This is a demo project to show how lazy loading has been implemented in Angular. Post related to this demo is in my blog post https://hellomahe.me/lazy-loading-modules-in-angular.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
@@ -14,7 +17,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## If your app is deplyed in CDN then use --deploy-url in build command.
+## If your app is deployed in CDN then use --deploy-url in build command.
 
 `ng build --deploy-url=https://cdn.example.com`
 
