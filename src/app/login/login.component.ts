@@ -19,10 +19,8 @@ export class LoginComponent implements OnInit {
 		// this.name = this._shared.getUserName()
 	}
 	login() {
-		console.log('logging in')
 		localStorage.setItem('isLoggedIn', 'true');
 		const name = `whatever ${(Math.random()*1000).toFixed()}`;
-		console.log(name)
 		this._shared.setUserData({
 			name,
 			loggedIn: new Date()

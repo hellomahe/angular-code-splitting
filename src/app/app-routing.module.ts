@@ -1,6 +1,5 @@
-import { ItemsModule } from './items/items.module';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component'
@@ -28,7 +27,10 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {
+      // enableTracing: true, //
+      preloadingStrategy: PreloadAllModules
+    }),
   ],
   exports: [RouterModule],
   declarations: []
